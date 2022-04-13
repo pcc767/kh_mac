@@ -17,12 +17,12 @@ public class MemberController {
         return currentMem;
     }
 
-    public boolean checkedId(String inputId) {
-        boolean current = false;
-        for(int i=0; i<m.length; i++){
-
-        }
-    }
+//    public boolean checkedId(String inputId) {
+//        boolean current = false;
+//        for(int i=0; i<m.length; i++){
+//
+//        }
+//    }
 
 
 
