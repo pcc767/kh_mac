@@ -1,4 +1,4 @@
-package com.kh2.hw.member.model.vo;
+package com.kh.hw2.member.model.vo;
 
 public class Member {
 
@@ -9,9 +9,7 @@ public class Member {
     private char gender;
     private int age;
 
-    public Member() {
-
-    }
+    public Member(){}
 
     public Member(String id, String name, String password, String email, char gender, int age) {
         this.id = id;
@@ -72,13 +70,25 @@ public class Member {
 
     @Override
     public String toString() {
-        return "Member [id=" + id + ", name=" + name + ", password=" + password + ", email=" + email + ", gender="
-                + gender + ", age=" + age + "]";
+        return "Member{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
     }
 
-    public String inform() {
-        return toString();
-
+    public String inform(){
+        return "Member{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
     }
 
 }
