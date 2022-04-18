@@ -28,7 +28,7 @@ public class TokenMenu {
                     break;
                 case 3:
                     System.out.println("프로그램을 종료합니다.");
-                    break;
+                    return;
                 default:
                     System.out.println("잘 못 입력하셨습니다.");
             }
