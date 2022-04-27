@@ -54,7 +54,7 @@ public class LibraryController {
         int result = 0;
 
         if(bList[index] instanceof AniBook){
-            if(((AniBook)bList[index]).getAccessAge() < mem.getAge())
+            if(((AniBook)bList[index]).getAccessAge() > mem.getAge())
                 result = 1;
         }
 
