@@ -3,10 +3,7 @@ package com.kh.practice.map.view;
 import com.kh.practice.map.controller.MemberController;
 import com.kh.practice.map.model.vo.Member;
 
-import java.util.Map;
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class MemberMenu {
 
@@ -113,11 +110,21 @@ public class MemberMenu {
     private void sameName() {
         System.out.print("검색할 이름 : ");
         String name = sc.nextLine();
-        Map<String, String> treeMap = new TreeMap<String, String>();
-        treeMap = mc.sameName(name);
-        for(Map.Entry<String, String> entry : treeMap.entrySet()) {
-            System.out.println("[이름] : "+entry.getKey()+", [아이디] : "+entry.getValue());
-        }
+
+//        Iterator<Map.Entry<String, Member>> iterator = mc.sameName(name).entrySet().iterator();
+//        while (iterator.hasNext()){
+//            Map.Entry<String, Member> entry = iterator.next();
+//            System.out.println("같은 이름 :"+ entry.getValue()+"입니다.");
+//        }
+
+        for(Map.Entry<String, Member> entry : mc.sameName(name).entrySet())
+            System.out.println("같은 이름 : "+ entry.getValue().getName()+" 입니다.");
+
+//        Map<String, Member> treeMap = new TreeMap<String, Member>();
+//        treeMap = mc.sameName(name);
+//        for(Map.Entry<String, Member> entry : treeMap.entrySet()) {
+//            System.out.println("[이름] : "+entry.getKey()+", [아이디] : "+entry.getValue());
+//        }
 
     }
 

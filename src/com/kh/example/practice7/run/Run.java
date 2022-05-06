@@ -12,7 +12,7 @@ public class Run {
         ey.setDept("영업부");
         ey.setJob("과장");
         ey.setAge(25);
-        ey.setGender('남');
+//        ey.setGender('남');
         ey.setSalary(2500000);
         ey.setBonusPoint(0.05);
         ey.setPhone("010-1234-5678");
