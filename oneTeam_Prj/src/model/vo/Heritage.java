@@ -5,8 +5,8 @@ import java.sql.Date;
 public class Heritage {
 
     private int regency_sn;
-    private int regency_no;
-    private int regency_design_no;
+    private String regency_no;
+    private String regency_design_no;
     private String regency_trans_no;
     private String regency_name_kor;
     private String regency_name_chi;
@@ -23,19 +23,19 @@ public class Heritage {
     private String regency_era;
     private String regency_owner;
     private String regency_content;
-    private java.sql.Date regency_enrolldate;
+    private String regency_enrolldate;
     private String regency_longitude;
     private String regency_latitude;
 
     public Heritage(){}
 
-    public Heritage(int regency_no, int regency_design_no, String regency_area_no) {
+    public Heritage(String regency_no, String regency_design_no, String regency_area_no) {
         this.regency_no = regency_no;
         this.regency_design_no = regency_design_no;
         this.regency_area_no = regency_area_no;
     }
 
-    public Heritage(int regency_sn, int regency_no, int regency_design_no, String regency_trans_no, String regency_name_kor,
+    public Heritage(int regency_sn, String regency_no, String regency_design_no, String regency_trans_no, String regency_name_kor,
                     String regency_name_chi, String regency_category_name, String regency_area, String regency_area_no,
                     String regency_admin) {
         this.regency_sn = regency_sn;
@@ -52,7 +52,7 @@ public class Heritage {
 
     public Heritage(String regency_address, String regency_type, String regency_type2, String regency_type3, String regency_type4,
                     String regency_quantity, String regency_era, String regency_owner, String regency_content,
-                    Date regency_enrolldate, String regency_longitude, String regency_latitude) {
+                    String regency_enrolldate, String regency_longitude, String regency_latitude) {
         this.regency_address = regency_address;
         this.regency_type = regency_type;
         this.regency_type2 = regency_type2;
@@ -67,11 +67,11 @@ public class Heritage {
         this.regency_latitude = regency_latitude;
     }
 
-    public Heritage(int regency_sn, int regency_no, int regency_design_no, String regency_trans_no, String regency_name_kor,
+    public Heritage(int regency_sn, String regency_no, String regency_design_no, String regency_trans_no, String regency_name_kor,
                     String regency_name_chi, String regency_category_name, String regency_area, String regency_area_no,
                     String regency_admin, String regency_address, String regency_type, String regency_type2,
                     String regency_type3, String regency_type4, String regency_quantity, String regency_era, String regency_owner,
-                    String regency_content, Date regency_enrolldate, String regency_longitude, String regency_latitude) {
+                    String regency_content, String regency_enrolldate, String regency_longitude, String regency_latitude) {
         this.regency_sn = regency_sn;
         this.regency_no = regency_no;
         this.regency_design_no = regency_design_no;
@@ -104,19 +104,19 @@ public class Heritage {
         this.regency_sn = regency_sn;
     }
 
-    public int getRegency_no() {
+    public String getRegency_no() {
         return regency_no;
     }
 
-    public void setRegency_no(int regency_no) {
+    public void setRegency_no(String regency_no) {
         this.regency_no = regency_no;
     }
 
-    public int getRegency_design_no() {
+    public String getRegency_design_no() {
         return regency_design_no;
     }
 
-    public void setRegency_design_no(int regency_design_no) {
+    public void setRegency_design_no(String regency_design_no) {
         this.regency_design_no = regency_design_no;
     }
 
@@ -248,11 +248,11 @@ public class Heritage {
         this.regency_content = regency_content;
     }
 
-    public Date getRegency_enrolldate() {
+    public String getRegency_enrolldate() {
         return regency_enrolldate;
     }
 
-    public void setRegency_enrolldate(Date regency_enrolldate) {
+    public void setRegency_enrolldate(String regency_enrolldate) {
         this.regency_enrolldate = regency_enrolldate;
     }
 
