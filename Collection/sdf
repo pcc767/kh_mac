@@ -1,0 +1,26 @@
+public class HeritageSearch {
+
+    public static String HERITAGE_SIMPLE_SEARCH = "http://www.cha.go.kr/cha/SearchKindOpenapiList.do";
+
+    public static void main(String[] args) {
+        callHeritageListByXML();
+        System.out.println("========================================================");
+    }
+
+    private static void callHeritageListByXML() {
+        try{
+            StringBuilder urlBuilder = new StringBuilder(HERITAGE_SIMPLE_SEARCH);
+
+            System.out.println(urlBuilder);
+
+//                    <totalCnt>16501</totalCnt>
+//<pageUnit>10</pageUnit>
+//<pageIndex>1</pageIndex>
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+}

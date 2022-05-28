@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/khEx.iml" filepath="$PROJECT_DIR$/khEx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oneTeam_Prj/oneTeam_Prj.iml" filepath="$PROJECT_DIR$/oneTeam_Prj/oneTeam_Prj.iml" />
     </modules>
   </component>
 </project>
